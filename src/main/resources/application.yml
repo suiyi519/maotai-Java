@@ -1,0 +1,34 @@
+
+spring:
+  application:
+    name: maotai
+
+maotai:
+  appId:
+    xlth: wxded2e7e6d60ac09d # 新联惠购
+    glyp: wx61549642d715f361 # 贵旅优品
+    kglg: wx613ba8ea6a002aa8 # 空港乐购
+    hlqg: wx936aa5357931e226 # 航旅黔购
+    zhcs: wx624149b74233c99a # 遵航出山
+    gyqp: wx5508e31ffe9366b8 # 贵盐黔品
+    llsc: wx821fb4d8604ed4d6 # 乐旅商城
+    ylqx: wxee0ce83ab4b26f9c # 驿路黔寻
+  cookies:
+    xlth: aWF0IjoxNzEwMjkzNTQ1fQ.ldzYu8wBstwCehd_G4qkvfS7Pq4rkXsE5MhfWBprg2E # 新联惠购
+    glyp: aWF0IjoxNzEwMjkzNTU0fQ.xrrx6y1aCjWEwgPpYbVxmMj_IBRi_RO7xZ7LTc3FwtI # 贵旅优品
+    kglg: aWF0IjoxNzEwMjkzNTUzfQ.kq4JXXKvNHtr3mfaGkCwLTPebfnfXIu__lg5wb6-kvs # 空港乐购
+    hlqg: aWF0IjoxNzExMDc0MDQ2fQ.PRXwgvYAv4Nbq8__wUImjAsxToTB4r9HXcjplmpMu8I # 航旅黔购
+    zhcs: aWF0IjoxNzEwMjkzNTUxfQ.9VfleSYaUugVDa8dO_1C95y3KM5jVHShXE210frM0mk # 遵航出山
+    gyqp: aWF0IjoxNzEwMjkzNTQ3fQ.0loRJN4LBTiSCwE62kMcQ8nFb1OqZMeTE2daNz2wB3M # 贵盐黔品
+    llsc: aWF0IjoxNzEwMjkzNTQ0fQ.iVlQBO1sna-iut_0DHQc8lKr6z1Yd-2yXcebIMxu6O4 # 乐旅商城
+    ylqx: aWF0IjoxNzEwMjkzNTU2fQ.AGUrInVOaxQAD1rVhe5BZ7ueY821xGI0nTzViflVe8M # 驿路黔寻
+  reserve:
+    scheduled:
+      cron: 0 45 8 * * * # 预约定时
+      enable: true # 是否开启
+  message:
+    pushKey: PDU
+    pushUrl: https://api2.pushdeer.com/message/push
+    scheduled:
+      cron: 0 45 10 * * * # 中奖记录定时
+      enable: true # 是否开启
